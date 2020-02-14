@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+
+<head>
+<link rel="stylesheet" type = "text/css" href="css.css">
+
+</head>
+<title>
+To Do List
+</title>
+<body>
+<div class="main">
+<h4 id="to"> MY TO DO LIST</h4>
+
+<input type="text" id="textbox" placeholder="What needs to be done?" onkeypress= "keyPress(event)">
+<button id="add" onclick="addTask()">Add</button></br>
+
+<input type="text" id="editbox" placeholder="To-do" onkeypress= "editKey(event)" style="visibility:hidden">
+<button id="save" onclick="saveEdit()" style="visibility:hidden">Save</button> <br/>
+    
+<div id="tasks">
+  <h4 id="h">TASKS</h4>
+		
+  <ul id="list1">
+  </ul>
+</div>
+
+<script src="Javascript.js"> </script>
+</div>
+</body>
+</html>

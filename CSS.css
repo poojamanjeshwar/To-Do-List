@@ -1,0 +1,155 @@
+body
+{
+  background-image:url("images/back.png");
+  margin:0px;
+  padding:0px;
+  background-repeat:no-repeat;
+  background-size:cover;  
+}
+ 
+#textbox
+{
+  margin-left:70px;
+  width:300px;
+  line-height:20px;
+}
+
+#add
+{
+  left:140px;
+  width:46px;
+  border-radius: 2px;
+  padding:5px;
+  text-align:center;
+  color:black;
+  border: 1px solid #0066ff;
+  background:#B7DDE8;
+  cursor:pointer;
+  font-family:Helvetica Neue;
+  font-size:13px;
+  font-weight:bold;
+}
+
+#editbox
+{
+  width:300px;	
+  position:relative;
+  margin-left:70px;
+  top:-29px;
+  line-height:20px;
+}
+
+#save
+{
+  position:relative;
+  left:2px;
+  top:-29px;
+  width:46px;
+  border-radius: 2px;
+  padding:5px;
+  color:black;
+  border: 1px solid #0066ff;
+  background:#B7DDE8;
+  cursor:pointer;
+   font-family:Helvetica Neue;
+  font-size:13px;
+  font-weight:bold;
+}
+
+.main
+{
+  position:relative;
+  top:80px;
+  margin:auto;
+  width:500px;
+  height:auto;
+}
+
+
+#to
+{
+  padding:5px;	
+  background-image:url("images/header.jpg");
+  color:white;
+  border:1px solid #000000;  
+  text-align:center;
+  border-radius:2px;
+  font-family:Cursive;
+}
+
+#tasks
+{
+  position:relative;
+  top:-10px;
+}
+        
+ul
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-radius: 10px;
+  }
+
+li *
+{
+  float:left;
+}
+
+li
+{ 
+  overflow:hidden;
+  padding:10px 0;
+  border-radius:2px;
+  margin-top: 0px;
+  list-style-type:none;
+  font-family: Comic Sans MS;
+}
+
+#h
+{
+  padding:5px;	
+  background-image:url("images/header.jpg");
+  color:white;
+  border:1px solid #000000;	
+  text-align: center;
+  margin-top:10px;
+  border-radius:2px;  
+  font-family:Cursive;
+}
+
+.taskText
+{
+  word-wrap:break-word;
+  width:300px;
+  font-size:18px;
+  margin-left:10px;
+}
+
+#editid
+{ 
+  margin-right:30px;
+  margin-left:100px;
+  margin-top:2px;
+  text-align:center;
+  cursor: pointer;
+ transform:rotate(140deg);
+}
+
+#deleteid
+{
+  text-align:center;
+  cursor: pointer;
+}
+
+ul li:nth-child(odd) 
+{
+  background: #b3d9ff;
+}
+
+.checking
+{
+  cursor:pointer;
+  position:relative;
+  top:5px;
+}  
