@@ -2,6 +2,8 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <title>
@@ -12,11 +14,21 @@
   <div class="main">
     <h4 id="to"> MY TO DO LIST</h4>
 
-    <input type="text" id="textbox" placeholder="What needs to be done?" onkeypress="keyPress(event)">
-    <button id="add" onclick="addTask()">Add</button></br>
+    <div class="input-group">
+      <input type="text" id="textbox" class="form-control" placeholder="What needs to be done?"
+        onkeypress="keyPress(event)">
+      <span class="input-group-btn">&nbsp
+        <button id="add" class="btn btn-primary" onclick="addTask()">Add</button>
+      </span>
+    </div>
 
-    <input type="text" id="editbox" placeholder="To-do" onkeypress="editKey(event)" style="visibility:hidden">
-    <button id="save" onclick="saveEdit()" style="visibility:hidden">Save</button> <br />
+    <div class="input-group">
+      <input type="text" id="editbox" class="form-control" placeholder="To-do" onkeypress="editKey(event)"
+        style="visibility:hidden">
+      <span class="input-group-btn">&nbsp
+        <button id="save" class="btn btn-primary" onclick="saveEdit()" style="visibility:hidden">Save</button>
+      </span>
+    </div>
 
     <div id="tasks">
       <h4 id="h">TASKS</h4>
