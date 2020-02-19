@@ -12,7 +12,7 @@ function addTask(){
     }	
 	else{
 	var list = addToList(task.value);  
-    document.getElementById("list1").appendChild(list);
+    document.getElementById("taskList").appendChild(list);
 	document.getElementById("textbox").value=""; //to clear the textbox
 	document.getElementById("textbox").focus();
 	}
@@ -35,8 +35,7 @@ function editItem()
 
 //function that saves the editted value back to the respective list item
 function saveEdit(){
-    var inItemText = document.getElementById("editbox");
-    var itemText = inItemText.value;
+    var itemText = document.getElementById("editbox").value;
 	document.getElementById(itemId).innerHTML = itemText;
 	document.getElementById('editbox').style.visibility = 'hidden';
 	document.getElementById('save').style.visibility = 'hidden';
@@ -81,7 +80,7 @@ var addToList = function(taskValue)
    return list;
 }
 
-//to strike a text to mark it as complete  when clicked on its checkbox
+//to strike a text to mark it as complete when clicked on its checkbox
 function strikeOut()
 {
 var checkedId = this.id.replace("checkboxid", "");
