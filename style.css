@@ -30,14 +30,6 @@ body
   font-weight:bold;
 }
 
-#editbox
-{
-  width:300px;	
-  position:relative;
-  margin-left:70px;
-  top:-29px;
-  line-height:20px;
-}
 
 #save
 {
@@ -54,6 +46,15 @@ body
    font-family:Helvetica Neue;
   font-size:13px;
   font-weight:bold;
+}
+
+#editbox
+{
+  width:300px;	
+  position:relative;
+  margin-left:70px;
+  top:-29px;
+  line-height:20px;
 }
 
 .main
@@ -152,4 +153,4 @@ ul li:nth-child(odd)
   cursor:pointer;
   position:relative;
   top:5px;
-}  
+}
